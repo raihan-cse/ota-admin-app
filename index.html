@@ -108,7 +108,43 @@
                 <a href="#" class="active">Email Notifications</a>
                 <a href="#">Auto Recharge Settings</a>
             </nav>
-            
+
+            <div class="tab_contents_wrapper">
+                <div id="emailNotification">
+                    <form class="email_notificaiton_form">
+                        <div class="check_wrapper">
+                            <input type="checkbox" id="verificationCompletes" checked>
+                            <label for="verificationCompletes">Notify me when list verification completes</label>
+                        </div>
+                        <div class="check_wrapper">
+                            <input type="checkbox" id="exportCompletes" checked>
+                            <label for="exportCompletes">Notify me when list export completes</label>
+                        </div>
+                        <div class="check_wrapper">
+                            <input type="checkbox" id="resultExpire">
+                            <label for="resultExpire">Notify me when list verification result is about to expire</label>
+                        </div>
+                        <div class="check_inputs_wrapper">
+                            <div class="check_wrapper">
+                                <input type="checkbox" id="receiveEmail" checked>
+                                <label for="receiveEmail">Receive Low Credits Email</label>
+                            </div>
+                            <div class="inputs_wrapper grid_container">
+                                <div class="input_wrapper">
+                                    <label>Send Email to<span>*</span></label>
+                                    <input type="email" placeholder="alexajui@gmail.com">
+                                </div>
+                                <div class="input_wrapper">
+                                    <label>When credits are less than<span>*</span></label>
+                                    <input type="text" placeholder="50" value="50">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn_submit">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
 
     </div>
