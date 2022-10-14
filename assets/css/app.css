@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color: #FF7901;
+    --white      : #FFFFFF;
+    --white-1    : #F2F2F4;
+    --color-4    : #26262E;
+    --color-5    : #7D7D7E;
+    --gray-4     : #BDBDBD;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: var(--color-4);
+    background-color: #FCFBFF;
+}
+
