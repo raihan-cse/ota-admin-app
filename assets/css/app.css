@@ -201,3 +201,34 @@ a {
     padding   : 3rem 0 5rem;
     margin-top: 3rem;
 }
+
+/* tabs */
+.user_customizations nav {
+    display        : flex;
+    justify-content: center;
+    border-bottom  : 2px solid var(--white-1);
+}
+
+.user_customizations nav a {
+    display    : inline-block;
+    font-weight: 500;
+    font-size  : 1.6rem;
+    line-height: 2.8rem;
+    color      : var(--color-4);
+    padding    : 1rem 1.6rem;
+    position   : relative;
+}
+
+.user_customizations nav a.active {
+    color: var(--brand-color);
+}
+
+.user_customizations nav a.active::before {
+    content         : '';
+    position        : absolute;
+    left            : 0;
+    bottom          : -1px;
+    width           : 100%;
+    height          : 2px;
+    background-color: var(--brand-color);
+}
