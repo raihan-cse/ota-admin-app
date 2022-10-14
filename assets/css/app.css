@@ -28,3 +28,36 @@ body {
     background-color: #FCFBFF;
 }
 
+
+/* nav start */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-4);
+    height: 9rem;
+}
+
+/* sidebar start */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22.4rem;
+    height: 100%;
+    background-color: var(--color-4);
+}
+
+/* main container start */
+.main_container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 12rem 3rem 3rem 25.4rem;
+}
+
+@media (min-width: 1920px) {
+    h1 {
+        display: none;
+    }
+}
