@@ -88,6 +88,12 @@ a {
     padding   : 12rem 3rem 3rem 25.4rem;
 }
 
+/* cards start */
+.cards_wrapper {
+    grid-template-columns: 32.5rem auto;
+    column-gap           : 3rem;
+}
+
 /* user card */
 .user_card {
     flex-direction: column;
@@ -119,6 +125,26 @@ a {
 
 .user_card p:not(:first-of-type) {
     margin-top: .5rem;
+}
+
+/* credits card start */
+.credits_card {
+    flex-direction : column;
+    justify-content: center;
+    padding        : 3rem;
+}
+
+.credits_card h5 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.credit_cards_wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap           : 3rem;
 }
 
 /* credit card */
@@ -167,4 +193,11 @@ a {
 
 .credit_card.default h6 {
     color: var(--color-4);
+}
+
+
+/* user customizations start */
+.user_customizations {
+    padding   : 3rem 0 5rem;
+    margin-top: 3rem;
 }
