@@ -250,16 +250,49 @@
 
     /* submit button */
     .email_notificaiton_form .btn_submit {
-        font-size    : 1.4rem;
-        line-height  : 2.6rem;
-        padding      : .6rem 1.2rem;
-        margin-top   : 2rem;
+        font-size  : 1.4rem;
+        line-height: 2.6rem;
+        padding    : .6rem 1.2rem;
+        margin-top : 2rem;
     }
 
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
+@media (max-width: 1199.98px) {
+
+    /* nav user dropdown */
+    .user_dropdown .btn_dropdown svg {
+        margin-top: 2px;
+    }
+
+    /* cards start */
+    .cards_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* user card */
+    .user_card {
+        justify-self: center;
+        padding     : 3rem 5rem;
+    }
+
+    /* credit card */
+    .credit_card {
+        padding: 2rem 1.5rem;
+    }
+
+    .credit_card button {
+        top  : .7rem;
+        right: .7rem;
+    }
+
+    /* tab contents */
+    .tab_contents_wrapper {
+        padding-left : 2rem;
+        padding-right: 2rem;
+    }
+}
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {}
