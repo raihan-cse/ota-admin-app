@@ -82,15 +82,16 @@ a {
     gap                  : 3rem;
 }
 
+/* sidebar toggle button */
 .sidebar_toggler .btn_sidebar_toggle {
-    display      : none;
-    color: var(--color-5);
+    display: none;
+    color  : var(--color-5);
 }
 
 .sidebar_toggler .btn_sidebar_toggle svg {
-    width: 3rem;
-    height: 3rem;
-    fill: var(--color-5);
+    width     : 3rem;
+    height    : 3rem;
+    fill      : var(--color-5);
     transition: fill .15s ease-in-out;
 }
 
@@ -98,6 +99,7 @@ a {
     fill: var(--brand-color)
 }
 
+/* nav user */
 .nav_user_wrapper {
     justify-self: flex-end;
     display     : flex;
@@ -160,19 +162,30 @@ a {
 .user_dropdown .btn_dropdown svg {
     width     : 1.4rem;
     height    : .7rem;
-    margin-top: 4px;
+    margin-top: 2px;
+}
+
+.dropdown_content_wrapper {
+    position  : absolute;
+    top       : 2.1rem;
+    left      : 0;
+    right     : 0;
+    overflow  : hidden;
+    height    : 0;
+    transition: height .15s ease-in-out;
+}
+
+.dropdown_content_wrapper.show {
+    height: initial;
 }
 
 .dropdown_content {
-    position        : absolute;
-    top             : 2.1rem;
-    left            : 0;
-    right           : 0;
     background-color: var(--white);
     border          : 1px solid var(--white-1);
     border-radius   : 1rem;
     box-shadow      : 0px 30px 20px -20px rgba(198, 211, 232, 0.2);
     padding         : 5.9rem 2rem 2rem;
+
 }
 
 .dropdown_content a {
@@ -223,20 +236,22 @@ a {
     background-color: var(--black);
     z-index         : 2;
 }
+
 .sidebar_content {
     position: relative;
-    padding         : 1.1rem 0;
-    z-index: 2;
+    padding : 1.1rem 0;
+    z-index : 2;
 }
 
 .sidebar .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    display         : none;
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+    z-index         : 1;
 }
 
 /* brand / logo */
@@ -322,8 +337,18 @@ a {
     background-position: right 2.9rem center;
 }
 
-.menu_wrapper li.is_submenu>a.active {
+.menu_wrapper li.is_submenu.show>a {
     background-image: url('../icons/chv-yellow-up.svg');
+}
+
+.menu_wrapper .is_submenu .sub_menu {
+    overflow: hidden;
+    height  : 0;
+    transition: height .15s ease-in-out;
+}
+
+.menu_wrapper .is_submenu.show .sub_menu {
+    height  : initial;
 }
 
 .menu_wrapper .sub_menu ul {

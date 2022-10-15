@@ -41,6 +41,10 @@
         height: .5rem;
     }
 
+    .dropdown_content_wrapper {
+        top: 1.4rem;
+    }
+
     .dropdown_content {
         top    : 1.4rem;
         padding: 4.9rem 1.5rem 1.5rem;
@@ -296,14 +300,19 @@
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    button {
+        cursor: auto;
+    }
 
     /* nav start */
     .navbar {
-        left            : 0;
+        left: 0;
     }
 
+    /* sidebar toggle button */
     .sidebar_toggler .btn_sidebar_toggle {
-        display: block;
+        display    : block;
+        margin-left: -2px;
     }
 
 
@@ -312,8 +321,16 @@
         transform : translateX(-20.4rem);
         transition: transform .15s ease-in-out;
     }
+
     .sidebar.show {
-        transform : initial;
+        transform: initial;
+    }
+    .sidebar .overlay {
+        display: block;
+    }
+
+    .brand_wrapper img {
+        max-width: 9rem;
     }
 
 
@@ -327,4 +344,96 @@
 @media (max-width: 767.98px) {}
 
 /* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+
+    /* nav start */
+    .navbar .grid_container {
+        grid-template-columns: 2.4rem auto;
+    }
+
+    /* sidebar toggle button */
+    .sidebar_toggler .btn_sidebar_toggle svg {
+        width: 2.4rem;
+    }
+
+    /* nav user */
+    .nav_user_wrapper .user_balance span.name {
+        margin-top: -3px;
+    }
+
+    .nav_user_wrapper .user_balance span.value {
+        font-size  : 2rem;
+        line-height: 2rem;
+        margin-left: .6rem;
+    }
+
+    /* user dropdown */
+    .user_dropdown {
+        margin-left: 1.5rem;
+    }
+
+    .user_dropdown .btn_dropdown {
+        grid-template-columns: 2.5rem auto 1.2rem;
+    }
+
+    .user_dropdown .btn_dropdown span {
+        font-size  : 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    .dropdown_content {
+        padding-top: 4rem;
+    }
+
+    /* sidebar */
+    .brand_wrapper img {
+        max-width: 8rem;
+    }
+
+    .menu_wrapper {
+        padding-top: 3rem;
+    }
+
+    /* credits card start */
+    .credit_cards_wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* user card */
+    .user_card {
+        justify-self: initial;
+    }
+
+    /* credit card */
+    .credit_card {
+        padding: 2rem;
+    }
+
+    .credit_card button {
+        top  : 1rem;
+        right: 1rem;
+    }
+
+    /* user customizations start */
+    .user_customizations {
+        padding: 1.5rem 0 3rem;
+    }
+
+    /* tabs */
+    .user_customizations nav {
+        display: block;
+        padding: 0 .8rem;
+    }
+
+    .tab_contents_wrapper {
+        padding-top: 2.5rem;
+    }
+
+
+    /* check with inputs */
+    .inputs_wrapper {
+        grid-template-columns: 1fr;
+        column-gap           : 0;
+        row-gap              : 2rem;
+    }
+}
