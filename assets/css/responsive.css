@@ -295,7 +295,33 @@
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+
+    /* nav start */
+    .navbar {
+        left            : 0;
+    }
+
+    .sidebar_toggler .btn_sidebar_toggle {
+        display: block;
+    }
+
+
+    /* sidebar start */
+    .sidebar {
+        transform : translateX(-20.4rem);
+        transition: transform .15s ease-in-out;
+    }
+    .sidebar.show {
+        transform : initial;
+    }
+
+
+    /* main container start */
+    .main_container {
+        padding-left: 2rem;
+    }
+}
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {}

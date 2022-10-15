@@ -83,7 +83,19 @@ a {
 }
 
 .sidebar_toggler .btn_sidebar_toggle {
-    display: none;
+    display      : none;
+    color: var(--color-5);
+}
+
+.sidebar_toggler .btn_sidebar_toggle svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--color-5);
+    transition: fill .15s ease-in-out;
+}
+
+.sidebar_toggler .btn_sidebar_toggle:hover svg {
+    fill: var(--brand-color)
 }
 
 .nav_user_wrapper {
@@ -209,8 +221,22 @@ a {
     width           : 22.4rem;
     height          : 100%;
     background-color: var(--black);
-    padding         : 1.1rem 0;
     z-index         : 2;
+}
+.sidebar_content {
+    position: relative;
+    padding         : 1.1rem 0;
+    z-index: 2;
+}
+
+.sidebar .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 /* brand / logo */
@@ -292,7 +318,7 @@ a {
 .menu_wrapper li.is_submenu>a {
     background-image   : url('../icons/chv-gray-down.svg');
     background-repeat  : no-repeat;
-    background-size :1.2rem .6rem;
+    background-size    : 1.2rem .6rem;
     background-position: right 2.9rem center;
 }
 
