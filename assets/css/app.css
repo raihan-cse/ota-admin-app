@@ -34,7 +34,7 @@ svg {
     vertical-align: middle;
 }
 
-button {
+button {    
     border          : 0;
     background-color: transparent;
     cursor          : pointer;
@@ -77,6 +77,10 @@ a {
     grid-template-columns: 3rem auto;
     align-items          : center;
     column-gap           : 3rem;
+}
+
+.sidebar_toggler .btn_sidebar_toggle {
+    display: none;
 }
 
 .nav_user_wrapper {
@@ -167,6 +171,7 @@ a {
     margin-top: 1rem;
 }
 
+/* logout button */
 .dropdown_content .btn_logout {
     display        : flex;
     justify-content: center;
@@ -187,6 +192,7 @@ a {
     font-size  : 1.6rem;
     line-height: 2.8rem;
     color      : #FF5E5E;
+    margin-left: .6rem;
 }
 
 
